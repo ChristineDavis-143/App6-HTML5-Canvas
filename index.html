@@ -71,8 +71,10 @@ function loadImage() {
 	var ctx = canvas.getContext("2d");
 
 	var img = new Image(); 
-	img.src = "https://via.placeholder.com/150"; //sample image
+	//Loading my image file
+	img.src = "BF9A48A1-E9D0-454D-8027-23769435C82D_1_105_c.jpeg"; //sample image
 
+	//Draw image after it loads
 	img.onload = function() {
 		ctx.drawImage(img, 50, 220, 150, 150);
 	};
